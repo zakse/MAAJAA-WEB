@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* #id Kontakti apskatīties stundu par id  */
+
+ 
+body { 
+    font-family:'Spartan';
+    background-color:white;}
+
+  .bg-topfoto {
+        background-image: url("img/ricardo-gomez-angel-fons\ construction.jpg");
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+        display: block;
+        padding: 20px;
+      }
+
+.h1 {
+        font-size: 300%;
+        font-weight: 300;
+        color: white;
+        padding: 8px;
+        background-color: #58595B;
+        }
+
+.text1 {
+        font-size: 100%;
+        font-weight: 500;
+        color:#C3F594;
+       text-align: left;
+       padding: 20px;
+       background-color: #58595B;
+          }
+.carousel-item img { 
+  height: 500px;
+  object-position: center center;
+  object-fit: cover;
+}
+
+.h3 {
+  font-size: 250%;
+  font-weight: 500;
+  color:black;
+  text-align: center;
+  padding: 40px 0px 10px 5px;
+}
+
+.text2 {font-size: 100;
+  font-weight: 500;
+  text-align: justify;
+  color: #58595B;
+  padding: 15px 10px 10px 20px;
+}
+
+.text3 { 
+  font-size: 100;
+  font-weight: 500;
+  text-align: center;
+  color: #58595B;
+  padding-top: 5pt;
+
+}
+
+.row {
+  padding-top: 2em;
+}
+.bg-mans {
+        background: #94c4f5;
+        font-size: 110%;
+      }
+
+.bg-mans a {
+        color: white;
+      }
+
+.bg-mans a:hover {
+        text-decoration: none;
+        color: chartreuse;      
+      }
+.bg-BUJ { 
+  background-color: #F1ACC7;
+}
+
+.bg2 {
+background-color: thistle;
+}
+.bgfooter {
+background-color: #58595B;
+color: white;
+}
+
+.textbottom {
+font-size: smaller;
+color: rgb(218, 209, 209);
+font-family: 'Spartan';
+}
+/*
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
