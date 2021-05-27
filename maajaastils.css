@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
 
-
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column {
@@ -9,17 +8,31 @@
     max-width: 100%;
   }
 }
-
-/* #id Kontakti apskatīties stundu par id  */
-
  
 body { 
     font-family:'Spartan';
     background-color:white;}
 
-  .bg-topfoto {
-        background-image: url("img/ricardo-gomez-angel-fons\ construction.jpg");
-        background-size:cover;
+ /* fons navigacijas joslai */   
+.bg-mans {
+      background: #3dfc8d;
+      font-size: 110%;
+    }
+ 
+ /* hovera krāsa navigacāijas saitēm labajā pusē*/    
+.navbar-light .navbar-nav.jap .nav-link:focus, .navbar-light .navbar-nav.navbar-nav.jap .nav-link:hover {
+    color: #FD3A6E;
+  }
+
+/* hovera krāsa navigācijas kontaktu saitēm kreisajā pusē*/    
+  .navbar-light .navbar-nav.kontaktinformacija .nav-link:focus, .navbar-light .navbar-nav.kontaktinformacija .nav-link:hover {
+    color: white;
+  }
+
+ /* fona bilde virsrakstam */
+.bg-topfoto {
+        background-image: url("img/DSC_8480.jpg");
+        background-size: cover;
         background-repeat: no-repeat;
         background-position-x: center;
         background-position-y: center;
@@ -27,27 +40,39 @@ body {
         padding: 20px;
       }
 
+.jumbotron {
+        min-height: 600px;
+    }
+
+ /*virsraksts MAAJAA jumbetronaa */   
 .h1 {
         font-size: 300%;
         font-weight: 300;
         color: white;
+        margin: 3px;
         padding: 8px;
-        background-color: #58595B;
+        background-color: #29292b;
         }
 
 .text1 {
         font-size: 100%;
         font-weight: 500;
-        color:#C3F594;
+        color:#3dfc8d;
        text-align: left;
+       margin: 3px;
        padding: 20px;
-       background-color: #58595B;
+       background-color: #29292b;
           }
+
+/* Nodaļa privātmaja */
+
 .carousel-item img { 
   height: 500px;
   object-position: center center;
   object-fit: cover;
 }
+
+/* Nodaļu virsraksti */
 
 .h3 {
   font-size: 250%;
@@ -57,11 +82,26 @@ body {
   padding: 40px 0px 10px 5px;
 }
 
+/* id, kur aizlec no navigācijas uz attiecīgo nodaļu */
+#pakalpojumi2 {
+  top: -10vh;
+}
+
 .text2 {font-size: 100;
   font-weight: 500;
   text-align: justify;
   color: #58595B;
-  padding: 15px 10px 10px 20px;
+  padding: 10px 10px 10px 20px;
+}
+
+.limitwidth {
+  width: 70%;
+  min-width: 280px;
+  text-align: center;
+}
+
+.row {
+  padding-top: 2em;
 }
 
 .text3 { 
@@ -70,43 +110,54 @@ body {
   text-align: center;
   color: #58595B;
   padding-top: 5pt;
-
 }
 
-.row {
-  padding-top: 2em;
-}
-.bg-mans {
-        background: #94c4f5;
-        font-size: 110%;
-      }
+.togglable:hover .front img {
+    opacity: 0;
+  } 
 
-.bg-mans a {
-        color: white;
-      }
-
-.bg-mans a:hover {
-        text-decoration: none;
-        color: chartreuse;      
-      }
-.bg-BUJ { 
-  background-color: #F1ACC7;
+.togglable:hover .front {
+position: relative;
 }
 
-.bg2 {
-background-color: thistle;
+.togglable:hover .back {
+  display: block;
+  background:#FD3A6E;
+  }
+  
+/*teksts aiz projektu foto*/
+.text4 {
+  font-size: 20px;  
+  font-weight: 500;
+  text-align: center;
+  color: white;
+  padding-top: 7pt;
+  padding-left: 5pt;
+  padding-right: 5pt;
+  text-justify: auto;
 }
-.bgfooter {
-background-color: #58595B;
-color: white;
-}
+
+.togglable .back {
+    display: none;
+    position: absolute;
+    top:0;
+    width: 100%;
+    left:0;
+    bottom: 0;
+    }
+
+  .bgfooter {
+    background-color: #58595B;
+    color: white;
+    }
 
 .textbottom {
-font-size: smaller;
-color: rgb(218, 209, 209);
-font-family: 'Spartan';
-}
-/*
-.selector-for-some-widget {
-  box-sizing: content-box;
+      font-size: smaller;
+      color: rgb(218, 209, 209);
+
+
+ /*biežāk uzdotie jautājumi, neaktīvs tagad/* 
+ 
+.bg-BUJ { 
+  background-color: #F1ACC7;
 }

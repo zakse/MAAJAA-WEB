@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
+     <!-- ikonām navbārā-->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
      <!--Mans css stils-->
      <link rel="stylesheet" href="maajaastils.css">
@@ -35,33 +36,45 @@
 
 <!--Header un  navbar -->
 
-<nav class="navbar sticky-top navbar-expand-lg bg-mans justify-content-between">
-  <div class="d-inline-flex p-2">
-    <div class="d-flex align-items-center">
-    <img style="padding-right: 20px" src="img/Maajaa-logo-black.png" width="max" height="60" alt="maajaa_logo">
-    <span class="navbar-text mx-n4">
-      <a href="tel:26183828;" class="px-4">  <i class="fa fa-phone colour" aria-hidden="true" ></i>  26183828</a>
-      <a href="tel:29676337;" class="px-4"> <i class="fa fa-phone colour" aria-hidden="true"></i>  29676337</a>
-      <a href="mailto:ozmaajaa@gmail.com" class="px-4"> <i class="fa fa-envelope" aria-hidden="true"></i>  ozmaajaa@gmail.com</a>
-    </div>
-    </div>
-  </div>
+<nav class="navbar navbar-light sticky-top navbar-expand-md bg-mans">
+  <div class="container-fluid"> 
+  <img class="navbar-brand px-3" src="img/Maajaa_buvnieciba_logo-caurspidigs.png" width="max" height="70" alt="logo">
   
 
-    <div class="d-inline-flex justify-content-end"> 
-      <ul class="navbar-nav ml-auto">
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse " id="navbarSupportedContent">
+    <div class="d-inline-flex justify-content-between align-items-center w-100">
+    <div class="p-2">
+      <div class="d-flex  px-3">
+      
+      <span class="navbar-text navbar-nav mx-n2 kontaktinformacija">
+        <a href="tel:26183828;" class="px-3 nav-link">  <i class="fa fa-phone colour" aria-hidden="true" ></i>  26183828</a>
+        <a href="tel:29676337;" class="px-3 nav-link"> <i class="fa fa-phone colour" aria-hidden="true"></i>  28624927</a>
+        <a href="mailto:ozmaajaa@gmail.com" class="px-3 nav-link"> <i class="fa fa-envelope" aria-hidden="true"></i>  info@maajaa.lv</a>
+      </div>
+    </div>
+
+    <div class="p-2"> 
+      <ul class="navbar-nav ml-auto jap">
         <li class="nav-item active">
-          <a class="nav-link" href="#kontakti">Kontakti<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#pakalpojumi2">Pakalpojumi</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#privatmaja">Privātmāja</a>
         </li>
       <li class="nav-item active">
-          <a class="nav-link" href="Realizetie projekti.html">Realizētie projekti<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#projekti">Realizētie projekti</a>
         </li>
       <li class="nav-item active">
-          <a class="nav-link" href="Pakalpojumi.html">Pakalpojumi<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#kontakti">Kontakti</a>
         </li>
       </ul>
-    <div class="collapse navbar-collapse" id="navbarText"> <!--kas tas ir?? aizmirsu-->
     </div>
+</div>
+</div>
 </div>
   </nav>
 
@@ -71,53 +84,71 @@
 <!--Otrā "sadaļa" bez konteinera, lai būtu līdz ekrāna malām. Fona bilde ar lielu virsrakstu un tekstu-->
 
   <div class="jumbotron jumbotron-fluid bg-topfoto">
-    <div class="mb-2">
+   
+
+    <div class="mb-2 mt-5">
     <h1 class="h1 d-inline">MAAJAA būvniecība</h1>      
     </div>
     
-    <div class="mb-2"> 
+    <div class="mb-2 mt-3"> 
     <p class="text1 d-inline-block">Būvējam privātmājas no A līdz Z pēc jūsu vai mūsu projekta.
 </p>
  </div>
 
  <div class="mb-2"> 
   <p class="text1 d-inline-block">
-   Pieredze būvniecības darbos 10 gadi.
+   10 gadu pieredze būvniecībā.
 </p>
 </div>
 
  <div class="mb-2"> 
   <p class="text1 d-inline-block">
-Atsaucīga un godīga komunikācija, kvalitāte talāk jāpadomā teksts.</p>
+Atsaucīga komunikācija!</p>
+
 </div>
   </div>
 
-
 <!--Trešā "sadaļa" PAKALPOJUMI-->
 
-
-<div class="justify-content">
-  <div class="container-fluid justify-content">
+<div class="justify-content position-relative" id="pakalpojumi">
+  <div class="position-absolute"  id="pakalpojumi2">  </div>
+  <div class="container-fluid justify-content " >
     <h3 class="h3">Pakalpojumi</h3>
     <div class="row">
-      <div class="col-sm">
-        <p class="text2">
+      <div class="col-sm ">
+        <p class="text2 limitwidth mx-auto">
           Teicama kvalitāte, adekvātas cenas, iekļaujamies termiņos! Mūsu misija - 
           būt uzticamam būvniecības uzņēmumam un stabilam sadarbības partnerim, 
-          kas izzina klientu vēlmes un īsteno tās atbilstošā kvalitātē.</p>
+          kas izzina klientu vēlmes un īsteno tās atbilstošā kvalitātē. <br>
+           Vairākus celtniecības un remonta projektus esam nodevuši saimniekiem, ar kuriem tika komunicēts
+           attālināti.
+          </p>
+          <p class="text2 limitwidth mx-auto"> 
+           Risinām jebkurus celtniecības jautājumus. Izbraucam un novērtējam uz vietas.
+
+           Savas darbības laikā esam nodibinājuši veiksmīgu sadarbību ar dažādiem būvniecības materiālu ražotājiem, izplatītājiem.
+          </p>
+           <p class="text2 limitwidth mx-auto"> 
+           Esam ieinteresēti, lai darbs tiktu paveikts pēc augstākajiem standartiem, 
+           tāpēc augstu vērtējam precizitāti, darbi tiek paveikti laicīgi, ievērojot noteiktos termiņus. Visiem būvniecības un remonta darbiem tiek dota 2 gadu garantija. ​
+          </p>
       </div>
     </div>
-
-
 </div>
-  
+
+<!--Trešā "sadaļa" PAKALPOJUMI beigas-->
+
+<!--Sadalošā līnija-->
+
 <div class="w-75 p-2 mx-auto"> 
-<hr class="bg-warning">
+<hr class="bg-dark">
 </div>
 
-<!--Par privātmāju       info-->
+<!--Sadalošā līnijas beigas-->
 
-<div class="container-fluid px-4 bg2">
+<!--Privātmājas būvniecības sadaļa-->
+
+<div class="container-fluid px-4 bg2" id="privatmaja">
   <h3 class="h3">Privātmājas būvniecība</h3>
   <div class="row">
     <div class="col-sm">
@@ -127,10 +158,13 @@ Atsaucīga un godīga komunikācija, kvalitāte talāk jāpadomā teksts.</p>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="IMG/privatmajatop.jpg" class="d-block w-100" alt="...">
+            <img src="IMG/DSC_8471.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
             <img src="IMG/DSC_8505.jpg" class="d-block w-100" alt="...">
@@ -139,77 +173,117 @@ Atsaucīga un godīga komunikācija, kvalitāte talāk jāpadomā teksts.</p>
             <img src="IMG/DSC_8555-HDR-2.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="IMG/DSC_8679.jpg" class="d-block w-100" alt="...">
+            <img src="IMG/DSC_8545-HDR.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="IMG/DSC_8649-HDR.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="IMG/DSC_8673.jpg" class="d-block w-100" alt="...">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Iepriekšējais</span>
+          <span class="visually-hidden">previous</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Nākamais</span>
+          <span class="visually-hidden">next</span>
         </button>
       </div>
 
     </div>
     <div class="col-sm d-flex p-2">
-      <p class="text2 align">Teicama kvalitāte, adekvātas cenas, iekļaujamies termiņos! Mūsu misija - būt uzticamam būvniecības uzņēmumam un stabilam sadarbības partnerim, kas izzina klientu vēlmes un īsteno tās atbilstošā kvalitātē.
+      <p class="text2 align"> Privātmāja tika celta apmēram gadu, sākot no pamatiem, uz ļoti slīpas virsmas. Koka karkas, tērauda logi. 
+         <br>
+        Atsauksme par objektu no klienta:
+        <br>
+        <img src="IMG/Atsauksme3.JPG" class="d-block w-100" alt="atsauksme">
       </p>
     </div>
   </div>
   </div>
 
-<!--Realizētie projekti virsraksts-->
+  <!--Privātmājas būvniecības sadaļas beigas-->
 
-<div class=conteiner-fluid>
+
+  <!--Sadalošā līnija-->
+
+  <div class="w-75 p-2 mx-auto"> 
+  <hr class="bg-dark">
+  </div>
+  
+  <!--Sadalošā līnijas beigas-->
+
+
+<!--Projekti virsraksts-->
+
+<div class="container-fluid">
   <h3 class="h3">Realizētie projekti</h3>
   <p class="text3">Labprāt parādīsim mūsu paveiktos darbus arī klātienē, iepriekš vienojoties. 
   </p>
 </div>
 
 <!--Realizētie projekti galerija-->
+<div class="container-fluid">
+    <div class="row" id="projekti">
+      <div class="col-sm togglable">
+        <div class="front">
+          <img src="IMG/Aktu zale.jpeg " style="width:100%" >
+          <div class="back">
+            <p class="text4">Sienu špaktelēšana un krāsošana.</p>                    
+          </div>                 
+        </div>  
 
-    </div>
-    
-    <div class="row">
-      <div class="col-sm">
-        <img src="IMG/Privātmājas rekonstrukcija.webp" style="width:100%">
-        <p class="text2">Realizētie projekti</p>
-      </div>
-      <div class="col-sm">
-        <img src="IMG/privatmajatop.jpg" style="width:100%">
-        <p class="text2">Realizētie projekti</p>
-      </div>
-      <div class="col-sm">
-        <img src="IMG/privatmajatop.jpg" style="width:100%">
-        <p class="text2">Realizētie projekti</p>
-      </div>
-    </div>
-  </div>
+        <p class="text2">Aktu zāle</p> 
 
+      </div>
+
+      <div class="col-sm togglable">
+
+        <div class="front">
+          <img src="IMG/barona dzivoklis.jpeg" style="width:100%" >
+          <div class="back"> 
+            <p class="text4"> Vannas istabas remonts, flīzēšana, sienu krāsošana, špaktelēšana. </p>
+            </div>       
+        </div>  
+        
+        <p class="text2">Dzīvokļa remonts</p>
+
+      </div>
+
+      <div class="col-sm togglable">
+
+        <div class="front">
+          <img src="IMG/zirafes maja zoo.webp" style="width:100%" >
+          <div class="back"> 
+            <p class="text4">Dēļu apdare žirafēm.</p>
+            </div>                   
+        </div>  
+
+        <p class="text2">Žirafes māja</p>
+
+      </div>
 
   
-  
+  <!--Realizētie projekti galerijas beigas-->
 
   <!-- Footer-->
 
-  <footer class="bgfooter">
+  <footer class="bgfooter textbottom pe-5">
     <div class="container-fluid d-flex justify-content-between" id="kontakti">
       <div class="row">
         <div class="col-sm">
-          <p class="text1"> SIA "maajaa" <br> Lejasciema 11, Rīga LV-1024. <br> Reģ. nr. LV40203122041 <br>
-           Banka: SWEDBANK AS <br>LV7??HABA055???????????????</p>
+          <p>SIA "maajaa" <br> Lejasciema 11, Rīga LV-1024 <br> Reģ. nr. LV40203122041
+      </p>
         </div>
       </div>  
-        <div class="row textbottom d-flex align-items-end">
-<p>© 2021 | Maajaa, SIA
+        <div class="row align-items-end">
+<p>©2021 | Maajaa, SIA
 </p>
         </div>
         <div class="row d-flex align-items-center">
         <div class="col-sm">
-         
-            </span>
           <a class="nav-link fs-2 text-white" target="_blank" href="https://www.facebook.com/maajaaremonts">  <i class="fa fa-facebook-f"></i></a>
         </div>
         </div>
@@ -219,7 +293,9 @@ Atsaucīga un godīga komunikācija, kvalitāte talāk jāpadomā teksts.</p>
   </footer>
 
   <!-- Option 1: Bootstrap Bundle without Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" 
-  integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+  <script src="majaajs.js"></script> 
 </body>
 </html>
