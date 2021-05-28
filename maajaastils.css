@@ -121,13 +121,15 @@ position: relative;
 }
 
 .togglable:hover .back {
-  display: block;
-  background:#FD3A6E;
+  display: flex;
+  background: #FD3A6E;
+  justify-content: center;
+  align-items: center;
   }
   
 /*teksts aiz projektu foto*/
 .text4 {
-  font-size: 20px;  
+  font-size: 20px;
   font-weight: 500;
   text-align: center;
   color: white;
@@ -144,6 +146,8 @@ position: relative;
     width: 100%;
     left:0;
     bottom: 0;
+
+    
     }
 
   .bgfooter {
@@ -154,10 +158,4 @@ position: relative;
 .textbottom {
       font-size: smaller;
       color: rgb(218, 209, 209);
-
-
- /*biežāk uzdotie jautājumi, neaktīvs tagad/* 
- 
-.bg-BUJ { 
-  background-color: #F1ACC7;
-}
+} 
